@@ -7,10 +7,11 @@ const navLink = document.querySelector('.nav__list');
 
 document.addEventListener('DOMContentLoaded', function() { // Аналог $(document).ready(function(){
   // Если должен быть найден один элемент
-  nav.hidden = true;
+  nav.setAttribute('hidden', true);
 });
 
 menuOpen.addEventListener('click', () => {
+  nav.removeAttribute('hidden');
   nav.classList.add('page__nav-is-active');
 });
 
