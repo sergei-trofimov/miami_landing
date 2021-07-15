@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', function() { // Аналог $(doc
 });
 
 menuOpen.addEventListener('click', () => {
-  hav.hidden = false;
   nav.classList.add('page__nav-is-active');
 });
 
