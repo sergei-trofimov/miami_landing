@@ -11,12 +11,14 @@
     left: 0;
     right: 0;
     transform: translateX(-100%);
+    opacity: 0;
 
-    transition-property: transform;
+    transition-property: transform, opacity;
     @extend %transition;
 
     &-is-active {
       transform: translateX(0);
+      opacity: 1;
     }
   }
 }
