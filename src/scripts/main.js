@@ -5,12 +5,13 @@ const nav = document.querySelector('.page__nav');
 const menuClose = document.querySelector('.nav__close-btn');
 const navLink = document.querySelector('.nav__list');
 
-document.addEventListener('DOMContentLoaded', function(){ // Аналог $(document).ready(function(){
+document.addEventListener('DOMContentLoaded', function() { // Аналог $(document).ready(function(){
   // Если должен быть найден один элемент
-  nav.hide();
+  nav.hidden = true;
 });
 
 menuOpen.addEventListener('click', () => {
+  hav.hidden = false;
   nav.classList.add('page__nav-is-active');
 });
 
